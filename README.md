@@ -2,11 +2,11 @@
 
 <hr>
 
-<h3> This project include this program languages</h3>
+<h3> This project include this programming Tools</h3>
 <br>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=opencv,py,qt,pycharm" />
+    <img src="https://skillicons.dev/icons?i=opencv,py,qt,pycharm,sqlite" />
   </a>
 </p>
 
