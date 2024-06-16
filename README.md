@@ -2,6 +2,14 @@
 
 <hr>
 
+<h3> This project include this program languages</h3>
+<br>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=dart,py,java,c,cpp" />
+  </a>
+</p>
+
 <p> At first you need go to the directory you want to clone this project </p>
 
 <br>
