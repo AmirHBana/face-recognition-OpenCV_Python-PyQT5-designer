@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(10, 50, 70);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>611</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Login</string>
+     </attribute>
+     <widget class="QLabel" name="QLABLE1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>601</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>8 - login.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>301</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+font: 14pt &quot;Symbola&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Face Recognition Attendance Login system</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LOGININFO">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+font: 14pt &quot;Symbola&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+font: 14pt &quot;Symbola&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Enter the Password</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PASSWORD">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#PASSWORD{
+	background-color: rgb(10, 50, 75);
+	border-radius:20px;
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: italic 10pt &quot;P052 [UKWN]&quot;;
+	color: rgb(2, 255, 200);
+}
+
+QLineEdit#PASSWORD:hover{
+	background-color: rgb(10, 60, 75);
+	color: rgb(20, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LOGINBUTTON">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#LOGINBUTTON{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#LOGINBUTTON:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CLOSEBUTTON">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#CLOSEBUTTON{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#CLOSEBUTTON:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>MainForm</string>
+     </attribute>
+     <widget class="QLabel" name="QLABLE2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>601</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>8 - mainform.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TRAINLINK1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#TRAINLINK1{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+	font: 75 14pt &quot;P052 [urw]&quot;;
+}
+
+QPushButton#TRAINLINK1:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>TRAIN USER</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ATTLINK1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ATTLINK1{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 13pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#ATTLINK1:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>ATTENDANCE ENTRY</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="REPORTSLINK1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#REPORTSLINK1{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#REPORTSLINK1:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>REPORTS</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LOGOUTBUTTON">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>260</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#LOGOUTBUTTON{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#LOGOUTBUTTON:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>LOGOUT</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Training</string>
+     </attribute>
+     <widget class="QLabel" name="QLABLE3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>601</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>8 - training.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 14pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TRAINING PROCESS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 14pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Enter the person name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="traineeName">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>241</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#traineeName{
+	background-color: rgb(10, 50, 76);
+	border-bottom:2px solid rgba(0,0,0,100);
+	color:rgba(255,255,255,255);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QLineEdit#traineeName:hover{
+	color:rgb(20,255,200);
+	background-color: rgb(10, 60, 76);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 14pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Training capture counts</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="trainingCount">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>241</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#trainingCount{
+background-color: rgb(10, 50, 76);
+border-bottom:2px solid rgba(0,0,0,100);
+color:rgba(255,255,255,255);
+padding:10px;
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+border-radius:20px;
+
+font: 14pt &quot;Terminal&quot;;
+color: rgb(2, 255, 200);
+}
+
+QLineEdit#trainingCount:hover{
+color:rgb(20,255,200);
+background-color: rgb(10, 60, 76);
+}</string>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TRAININGBUTTON">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>280</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#TRAININGBUTTON{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#TRAININGBUTTON:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>TRAIN</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="TRAININGBACK">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>280</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#TRAININGBACK{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 14pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	font: 14pt &quot;Terminal&quot;;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#TRAININGBACK:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>GO BACK</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Face Recognition</string>
+     </attribute>
+     <widget class="QLabel" name="QLABLE4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>601</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>8 - facereco.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 14pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ATTENDANCE ENTRY</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="RECORD">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#RECORD{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	font: 75 13pt &quot;P052 [urw]&quot;;
+	border-radius:20px;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#RECORD:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>RECORD ATTENDANCE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentprocess_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 14pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Current Status</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentprocess">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 14pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Waiting...</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ATTENDANCEBACK">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>210</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ATTENDANCEBACK{
+border-bottom:2px solid rgba(0,0,0,100);
+padding:10px;
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+border-radius:20px;
+font: 14pt &quot;Terminal&quot;;
+color: rgb(2, 255, 200);
+}
+
+QPushButton#ATTENDANCEBACK:hover{
+background-color: rgb(10,80,76);
+color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>GO BACK</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentprocess_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(2, 255, 200);
+background-color: rgba(255, 255, 255, 0);
+	font: 75 8pt &quot;P052 [urw]&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Please show your face to record the attendance. If you have already trained the system with your face, it will automatically record the attendace for you.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Reports</string>
+     </attribute>
+     <widget class="QLabel" name="QLABLE5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>601</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>8 - reports.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>20</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 75 12pt &quot;P052 [urw]&quot;;
+background-color: rgba(255, 255, 255, 0);
+color: rgb(2, 255, 200);
+</string>
+      </property>
+      <property name="text">
+       <string>ATTENDANCE REPORT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>70</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 75 11pt &quot;P052 [urw]&quot;;
+background-color: rgba(255, 255, 255, 0);
+color: rgb(2, 255, 200);
+</string>
+      </property>
+      <property name="text">
+       <string>Select Date</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>70</y>
+        <width>81</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="REPORTS">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>181</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(2, 255, 200);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="REPORTSBACK">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>280</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#REPORTSBACK{
+	border-bottom:2px solid rgba(0,0,0,100);
+	padding:10px;
+	border-radius:20px;
+	font: 75 13pt &quot;P052 [urw]&quot;;
+	color: rgb(2, 255, 200);
+}
+
+QPushButton#REPORTSBACK:hover{
+	background-color: rgb(10,80,76);
+	color: rgb(2, 255, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>GO BACK</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>611</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
