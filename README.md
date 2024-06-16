@@ -6,7 +6,7 @@
 <br>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=opencv,py,qt,pycharm,sqlite" />
+    <img src="https://skillicons.dev/icons?i=opencv,py,qt,pycharm,sqlite,anaconda" />
   </a>
 </p>
 
